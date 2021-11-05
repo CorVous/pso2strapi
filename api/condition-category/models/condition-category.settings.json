@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "condition_categories",
+  "info": {
+    "name": "Condition Category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "description": {
+      "type": "richtext",
+      "pluginOptions": {}
+    },
+    "conditions": {
+      "via": "condition_categories",
+      "collection": "condition"
+    },
+    "iname": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {},
+      "component": "international.international-name"
+    },
+    "idescription": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {},
+      "component": "international.international-description"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_international_international_names",
+  "info": {
+    "name": "InternationalName",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "en_fan": {
+      "type": "string"
+    },
+    "jp": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/enemy-leveled-stats",
+      "handler": "enemy-leveled-stats.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/enemy-leveled-stats/count",
+      "handler": "enemy-leveled-stats.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/enemy-leveled-stats/:id",
+      "handler": "enemy-leveled-stats.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/enemy-leveled-stats",
+      "handler": "enemy-leveled-stats.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/enemy-leveled-stats/:id",
+      "handler": "enemy-leveled-stats.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/enemy-leveled-stats/:id",
+      "handler": "enemy-leveled-stats.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

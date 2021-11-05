@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "affix_families",
+  "info": {
+    "name": "Affix Family",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "iname": {
+      "type": "component",
+      "repeatable": false,
+      "component": "international.international-name"
+    },
+    "affixes": {
+      "via": "affix_family",
+      "collection": "affix"
+    }
+  }
+}

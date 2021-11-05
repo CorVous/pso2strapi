@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/weapon-types",
+      "handler": "weapon-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/weapon-types/count",
+      "handler": "weapon-type.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/weapon-types/:id",
+      "handler": "weapon-type.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/weapon-types",
+      "handler": "weapon-type.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/weapon-types/:id",
+      "handler": "weapon-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/weapon-types/:id",
+      "handler": "weapon-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

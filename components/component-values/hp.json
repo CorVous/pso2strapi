@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_class_values_hps",
+  "info": {
+    "name": "LeveledField",
+    "icon": "hat-wizard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "level": {
+      "type": "integer"
+    },
+    "value": {
+      "type": "float"
+    }
+  }
+}

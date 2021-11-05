@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "enemies",
+  "info": {
+    "name": "Enemy",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "pluginOptions": {},
+      "type": "string"
+    },
+    "attack_multiplier": {
+      "pluginOptions": {},
+      "type": "decimal",
+      "default": 1
+    },
+    "stats": {
+      "model": "enemy-leveled-stats"
+    },
+    "elemental_weakness": {
+      "pluginOptions": {},
+      "type": "enumeration",
+      "enum": [
+        "Ice",
+        "Fire",
+        "Lightning",
+        "Wind",
+        "Light",
+        "Dark"
+      ]
+    },
+    "iname": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {},
+      "component": "international.international-name"
+    },
+    "base_hp": {
+      "pluginOptions": {},
+      "type": "integer"
+    },
+    "base_xp": {
+      "pluginOptions": {},
+      "type": "float"
+    }
+  }
+}

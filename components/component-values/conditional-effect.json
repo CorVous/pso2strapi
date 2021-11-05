@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_component_values_conditional_effects",
+  "info": {
+    "name": "ConditionalEffect",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Effect": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component-values.stat-set"
+    },
+    "condition": {
+      "model": "condition"
+    }
+  }
+}

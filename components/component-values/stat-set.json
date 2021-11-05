@@ -1,0 +1,75 @@
+{
+  "collectionName": "components_component_values_stat_sets",
+  "info": {
+    "name": "StatSet",
+    "icon": "align-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "hp": {
+      "type": "integer"
+    },
+    "melee_potency": {
+      "type": "float"
+    },
+    "technique_potency": {
+      "type": "float"
+    },
+    "ranged_potency": {
+      "type": "float"
+    },
+    "potency_floor": {
+      "type": "float"
+    },
+    "pp": {
+      "type": "integer"
+    },
+    "damage_reduction": {
+      "type": "float"
+    },
+    "physical_down_resist": {
+      "type": "float"
+    },
+    "poison_resist": {
+      "type": "float"
+    },
+    "panic_resist": {
+      "type": "float"
+    },
+    "blind_resist": {
+      "type": "float"
+    },
+    "shock_resist": {
+      "type": "float"
+    },
+    "freeze_resist": {
+      "type": "float"
+    },
+    "burn_resist": {
+      "type": "float"
+    },
+    "calculation_location": {
+      "type": "enumeration",
+      "enum": [
+        "affix",
+        "after"
+      ]
+    },
+    "pp_cost_down": {
+      "type": "float"
+    },
+    "pp_natural_regen": {
+      "type": "float"
+    },
+    "pp_active_regen": {
+      "type": "float"
+    },
+    "critical_chance": {
+      "type": "float"
+    },
+    "critical_damage": {
+      "type": "float"
+    }
+  }
+}

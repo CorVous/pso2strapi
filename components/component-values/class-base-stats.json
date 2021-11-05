@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_component_values_class_base_stats",
+  "info": {
+    "name": "ClassBaseStats",
+    "icon": "angle-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "level": {
+      "type": "integer"
+    },
+    "hp": {
+      "type": "integer"
+    },
+    "attack": {
+      "type": "integer"
+    },
+    "defense": {
+      "type": "integer"
+    }
+  }
+}

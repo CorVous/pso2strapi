@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_international_international_descriptions",
+  "info": {
+    "name": "InternationalDescription",
+    "icon": "atlas",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "en_fan": {
+      "type": "richtext"
+    },
+    "jp": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/affixes",
+      "handler": "affix.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/affixes/count",
+      "handler": "affix.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/affixes/:id",
+      "handler": "affix.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/affixes",
+      "handler": "affix.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/affixes/:id",
+      "handler": "affix.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/affixes/:id",
+      "handler": "affix.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

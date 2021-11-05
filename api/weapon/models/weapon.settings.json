@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "weapons",
+  "info": {
+    "name": "Weapon Series",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "attack": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {},
+      "component": "component-values.hp"
+    },
+    "min_attack": {
+      "pluginOptions": {},
+      "type": "decimal"
+    },
+    "max_attack": {
+      "pluginOptions": {},
+      "type": "decimal",
+      "default": 1
+    },
+    "weapon_types": {
+      "collection": "weapon-type",
+      "via": "weapon_series",
+      "dominant": true
+    },
+    "iname": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {},
+      "component": "international.international-name"
+    },
+    "weapon_potential": {
+      "via": "weapon_series",
+      "model": "weapon-potential"
+    },
+    "weapon_rarity_attack_scaling": {
+      "model": "weapon-rarity-attack-scaling"
+    },
+    "base_attack": {
+      "type": "integer"
+    }
+  }
+}

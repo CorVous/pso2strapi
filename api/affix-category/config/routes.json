@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/affix-categories",
+      "handler": "affix-category.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/affix-categories/count",
+      "handler": "affix-category.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/affix-categories/:id",
+      "handler": "affix-category.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/affix-categories",
+      "handler": "affix-category.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/affix-categories/:id",
+      "handler": "affix-category.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/affix-categories/:id",
+      "handler": "affix-category.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

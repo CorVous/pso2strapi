@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/weapon-rarity-attack-scalings",
+      "handler": "weapon-rarity-attack-scaling.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/weapon-rarity-attack-scalings/count",
+      "handler": "weapon-rarity-attack-scaling.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/weapon-rarity-attack-scalings/:id",
+      "handler": "weapon-rarity-attack-scaling.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/weapon-rarity-attack-scalings",
+      "handler": "weapon-rarity-attack-scaling.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/weapon-rarity-attack-scalings/:id",
+      "handler": "weapon-rarity-attack-scaling.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/weapon-rarity-attack-scalings/:id",
+      "handler": "weapon-rarity-attack-scaling.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

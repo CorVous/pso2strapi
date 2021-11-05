@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "armors",
+  "info": {
+    "name": "Armor",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "iname": {
+      "type": "component",
+      "repeatable": true,
+      "component": "international.international-name"
+    },
+    "stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component-values.stat-set"
+    },
+    "armor_rarity_defense_scaling": {
+      "model": "armor-rarity-defense-scaling"
+    },
+    "base_defense": {
+      "type": "integer"
+    }
+  }
+}

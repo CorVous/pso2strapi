@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "affixes",
+  "info": {
+    "name": "Affix",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "pluginOptions": {},
+      "type": "string"
+    },
+    "stats": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {},
+      "component": "component-values.stat-set"
+    },
+    "conditional_effects": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {},
+      "component": "component-values.conditional-effect"
+    },
+    "iname": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {},
+      "component": "international.international-name"
+    },
+    "affix_family": {
+      "model": "affix-category",
+      "via": "affixes"
+    }
+  }
+}

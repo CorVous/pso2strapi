@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_component_values_enemy_base_stats",
+  "info": {
+    "name": "EnemyBaseStats",
+    "icon": "arrow-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "level": {
+      "type": "integer"
+    },
+    "defense": {
+      "type": "float"
+    },
+    "hp": {
+      "type": "float"
+    },
+    "min_attack": {
+      "type": "float"
+    },
+    "max_attack": {
+      "type": "float"
+    },
+    "max_player_attack": {
+      "type": "integer"
+    },
+    "xp_multiplier": {
+      "type": "float"
+    }
+  }
+}

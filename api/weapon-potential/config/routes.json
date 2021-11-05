@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/weapon-potentials",
+      "handler": "weapon-potential.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/weapon-potentials/count",
+      "handler": "weapon-potential.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/weapon-potentials/:id",
+      "handler": "weapon-potential.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/weapon-potentials",
+      "handler": "weapon-potential.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/weapon-potentials/:id",
+      "handler": "weapon-potential.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/weapon-potentials/:id",
+      "handler": "weapon-potential.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

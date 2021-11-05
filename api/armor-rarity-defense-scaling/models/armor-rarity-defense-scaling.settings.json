@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "armor_rarity_defense_scalings",
+  "info": {
+    "name": "Armor Rarity Defense Scaling"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "rarity": {
+      "type": "integer"
+    },
+    "defense": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component-values.hp"
+    }
+  }
+}

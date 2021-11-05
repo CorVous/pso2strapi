@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/armor-rarity-defense-scalings",
+      "handler": "armor-rarity-defense-scaling.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/armor-rarity-defense-scalings/count",
+      "handler": "armor-rarity-defense-scaling.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/armor-rarity-defense-scalings/:id",
+      "handler": "armor-rarity-defense-scaling.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/armor-rarity-defense-scalings",
+      "handler": "armor-rarity-defense-scaling.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/armor-rarity-defense-scalings/:id",
+      "handler": "armor-rarity-defense-scaling.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/armor-rarity-defense-scalings/:id",
+      "handler": "armor-rarity-defense-scaling.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

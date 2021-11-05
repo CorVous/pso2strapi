@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "weapon_rarity_attack_scalings",
+  "info": {
+    "name": "Weapon Rarity Attack Scaling"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "rarity": {
+      "type": "integer"
+    },
+    "attack": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component-values.hp"
+    }
+  }
+}

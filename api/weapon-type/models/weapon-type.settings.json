@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "weapon_types",
+  "info": {
+    "name": "Weapon Type",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "pluginOptions": {},
+      "type": "string"
+    },
+    "classes": {
+      "via": "weapon_types",
+      "collection": "class",
+      "dominant": true
+    },
+    "iname": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {},
+      "component": "international.international-name"
+    },
+    "weapon_series": {
+      "via": "weapon_types",
+      "collection": "weapon"
+    }
+  }
+}

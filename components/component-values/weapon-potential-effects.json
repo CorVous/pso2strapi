@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_component_values_weapon_potential_effects",
+  "info": {
+    "name": "WeaponPotentialEffects",
+    "icon": "carrot",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "level": {
+      "type": "integer"
+    },
+    "effect": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component-values.stat-set"
+    },
+    "conditional_effect": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component-values.stat-set"
+    }
+  }
+}

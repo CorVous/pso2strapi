@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "weapon_potentials",
+  "info": {
+    "name": "Weapon Potential",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "pluginOptions": {},
+      "type": "string"
+    },
+    "potential": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {},
+      "component": "component-values.weapon-potential-effects"
+    },
+    "condition": {
+      "model": "condition"
+    },
+    "description": {
+      "pluginOptions": {},
+      "type": "richtext"
+    },
+    "iname": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {},
+      "component": "international.international-name"
+    },
+    "idescription": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {},
+      "component": "international.international-description"
+    },
+    "weapon_series": {
+      "via": "weapon_potential",
+      "collection": "weapon"
+    }
+  }
+}

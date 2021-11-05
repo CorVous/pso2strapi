@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "classes",
+  "info": {
+    "name": "Class",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "pluginOptions": {},
+      "type": "string"
+    },
+    "weapon_types": {
+      "via": "classes",
+      "collection": "weapon-type"
+    },
+    "stats": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {},
+      "component": "component-values.class-base-stats"
+    },
+    "iname": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {},
+      "component": "international.international-name"
+    }
+  }
+}
